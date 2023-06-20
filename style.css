@@ -1,0 +1,453 @@
+body{
+    margin: 0px;
+    font-family:sans-serif;
+}
+
+#body-header{
+    height: 65vh;
+    /* opacity: 0.8; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/27/14/31/stars-2179083_1280.jpg);
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+.horizontal-list li a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav-menu{
+    padding: 10px;
+        transition: color 0.5s, text-decoration 0.5s;
+}
+.nav-menu li a{
+    padding: 10px;
+}
+
+.nav-menu li a:hover{
+    color: lightgray;
+    /* border-bottom: 2px solid lightgray; */
+    text-decoration: underline;
+}
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+}
+
+.social-icons{
+    margin-top: 15px;
+}
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: box-shadow 0.5s;
+}
+
+.social-icons li a i:hover{
+    /* box-shadow: verticalkitaraf horizontalkitaraf blur spread color; */
+    box-shadow: 0px 0px  6px 4px white;
+}
+
+section{
+    width: 100%; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+/* section:target{
+
+    background-color: cyan;
+} */
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-img{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+            border: 5px solid white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 6px 1px white;
+
+
+}
+
+#my-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+#about p{
+    text-align: justify;
+    margin: 20px 30% 10px 30%;
+}
+
+/* skill section */
+#skill{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-display{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.skill-progress>div{
+    border-radius: 20px;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+
+
+/* timeline */
+.timeline{
+    position: relative;
+    width: 75%;
+    margin-bottom: 10%;
+    /* border: 2px solid black; */
+}
+
+.timeline-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    flex-direction:column;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 200px;
+    background-color: #2857a4;
+    /* border: 1px solid black; */
+}
+
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+/* .timeline-box:nth-child(2n+1):after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(12, 0, 0);
+    z-index: 1;
+} */
+/* .timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: black;
+    z-index: 1;
+} */
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+.timeline-box h1{
+    width: auto;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+}
+
+.timeline-box span{
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    /* padding-top: 10px; */
+    /* margin-right: 0.5rem; */
+}
+.timeline-box p{
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding-right: 50px; */
+    
+}
+
+.timeline-box a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px;
+    transition: all 0.25s;
+    font-weight: bolder;
+}
+
+.timeline-box a:hover{
+    background-color: white;
+
+    color: #2857a4;
+}
+
+@media screen and (max-width: 600px){
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        /* importtant ka matlab hai ki yehi dominate karega  */
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left: -12% !important;
+    }
+    /* .timeline-box:nth-child(2n)::after{
+        left: -12%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: -12%;
+    } */
+
+    .timeline-box a{
+        margin-bottom: 10px;
+    }
+    
+    /* about */
+    #about p{
+        display: flex;
+        margin: 20px;
+    }
+}
+
+.timeline-traveller{
+    font-size: 20px;
+    transform: rotate(90deg);
+    position: sticky;
+    top: 25%;
+    z-index: 2;
+    
+}
+
+/* contact section */
+
+#contact{
+    background: linear-gradient(45deg, rgb(57, 57, 223) 60%, rgb(186, 45, 186)  );
+}
+
+#contact-heading{
+    color: white; 
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    
+}
+#contact-heading span{
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+    width: 85%;
+
+}
+.contact-me{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.contact-me input{
+    background-color: transparent;
+    border: 0;
+    width: 80%;
+    border-bottom: 2px solid white;
+    margin: 30px;
+}
+#contact-btn{
+    width: 33%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+/* .contact-me button{
+   margin-top: 20px;
+   width: 100px;
+   height: 40px;
+   margin-left: 210px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.5s;
+
+} */
+
+#contact-btn:hover{
+    background-color: white;
+    color: rgb(57, 57, 223);
+    cursor: pointer;
+    border-color: rgb(57, 57, 223);
+}
+.contact-me input::placeholder{
+    color: white ;
+}
+.information{
+    width: 50%;
+    color: white;
+}
+
+
+
+
+
+/* private classes */
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-green{
+    background-color: green;
+}
+.mb-sky-blue{
+    background-color: rgb(26, 177, 236);
+}
+.mb-sea-green{
+    background-color: hotpink;
+}
+.mb-navy-blue{
+    background-color: navy;
+}
+.mb-wine{
+    background-color: rgb(90, 0, 90);
+}
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    width: 85%;
+    height: inherit;
+}
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+.seventy-five-percent{
+    width: 75%;
+    height: inherit;
+}
+.ninty-percent{
+    width: 90%;
+    height: inherit;
+}
+.ninty-five-percent{
+    width: 95%;
+    height: inherit;
+}
+.sixty-percent{
+    width:60%;
+    height: inherit;
+}
